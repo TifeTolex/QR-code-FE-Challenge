@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;
+background-color: var(--LIGHT-GRAY) ;
+justify-content: center;}
+
+
+/* some variables */
+:root {
+    --WHITE-COLOR: hsl(0, 0%, 100%);
+    --LIGHT-GRAY:hsl(212, 45%, 89%);
+    --GB-COLOR: hsl(220, 15%, 55%);
+    --DB-COLOR: hsl(218, 44%, 22%);
+} 
+
+
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--WHITE-COLOR);
+    padding: .5rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    width: min(100%, 400px);
+    height: min(100%, 400px);
+}
+.img-code{
+        display: block;
+        max-width: 100%;
+        padding: 1rem;
+        height: auto;
+        border-radius: 2rem; 
+}
+.attribution { font-size: 11px; 
+                text-align: center; 
+                color: hsl(228, 45%, 44%);}
+  
+
+.first{
+    font-size:1.7rem ;
+    font-family: outfit, sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+}
+.second{
+    font-size: 1rem;
+    font-family: outfit, sans-serif;
+    text-align: center;
+    padding: .7rem;
+    font-weight: 400;
+
+}
+span {
+    text-wrap:nowrap;
+    display: block;
+}
+
+
+/* media queries */
+
+@media screen and (min-width:375px) {
+    .first{
+        font-size:clamp(.75rem , 3vh, 1.25rem);
+    }
+
+    .second{
+        font: .5rem;
+    }
+    section{
+    width: min(100%, 300px);
+    height: min(100%, 300px);
+    }   
+}
+
+@media screen and (min-width:1440px) {
+
+    .first{
+        font-size:clamp(1.75rem , 3vh, 3.25rem);
+    }
+
+    .second{
+        font: 1.5rem;
+    }
+
+    section{
+        width: min(100%, 500px);
+        height: min(100%, 500px);
+    }
+
+    
+}
